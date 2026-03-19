@@ -6,8 +6,6 @@ export default function Navbar() {
     <nav style={{
       display: "flex",
       justifyContent: "center",
-      flexDirection: "column",
-      alignItems: "center",
       gap: "20px",
       padding: "20px",
       borderBottom: "1px solid #333",

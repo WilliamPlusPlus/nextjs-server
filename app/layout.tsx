@@ -14,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-    <Navbar />
+    <html lang="en-us">
     	<body className="gradient-bg">
-        {children}
+        <Navbar />
+	{children}
       </body>
-    </html>
+  </html>
   )
 }
