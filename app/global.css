@@ -54,3 +54,17 @@ p {
     background-position: 0% 50%;
   }
 }
+
+.app-body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+  flex-direction: column;
+}

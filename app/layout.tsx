@@ -15,9 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-us">
-    	<body className="gradient-bg">
+    	<body className="gradient-bg app-body">
         <Navbar />
-	{children}
+	<main className="app-main">{children}</main>
       </body>
   </html>
   )
