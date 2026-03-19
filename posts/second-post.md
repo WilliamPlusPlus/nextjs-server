@@ -1,4 +1,4 @@
-# MDX Rendering Test
+# MD Rendering Test
 
 This paragraph checks **bold**, *italic*, and `inline code`.
 

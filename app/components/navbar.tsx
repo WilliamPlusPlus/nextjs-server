@@ -14,6 +14,7 @@ export default function Navbar() {
       <Link href="/">Home</Link>
       <Link href="/time">Server Time</Link>
       <Link href="/system">System Status</Link>
+      <Link href="/blog">Blog</Link>
     </nav>
   )
 }
