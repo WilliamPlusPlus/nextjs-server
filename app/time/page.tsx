@@ -1,6 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import '../global.css'
+
+import styles from "../components/page-styles.module.css"
 
 export default function Page() {
   const [time, setTime] = useState("")
@@ -19,7 +22,7 @@ export default function Page() {
   }, [])
 
   return (
-    <div>
+    <div className={styles.centeredContent}>
       <h1>Server Time</h1>
       <p>{time}</p>
     </div>
