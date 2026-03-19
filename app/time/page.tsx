@@ -23,8 +23,10 @@ export default function Page() {
 
   return (
     <div className={styles.centeredContent}>
+      <section className={styles.glassPanel}>
       <h1>Server Time</h1>
       <p>{time}</p>
+      </section>
     </div>
   )
 }

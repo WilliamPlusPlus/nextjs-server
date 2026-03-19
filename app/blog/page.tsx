@@ -6,6 +6,7 @@ import styles from './page.module.css'
 type Post = {
   slug: string
   title: string
+  date?: string
 }
 
 export default async function BlogPage() {
@@ -19,10 +20,12 @@ export default async function BlogPage() {
         const slug = file.replace(/\.md$/, '')
         const markdown = await readFile(path.join(postsDir, file), 'utf8')
         const titleMatch = markdown.match(/^#\s+(.+)$/m)
+        const dateMatch = markdown.match(/^###\s+(.+)$/m)
 
         return {
           slug,
           title: titleMatch?.[1] ?? slug,
+          date: dateMatch?.[1],
         }
       })
   )
@@ -34,7 +37,10 @@ export default async function BlogPage() {
         <ul>
           {posts.map((post) => (
             <li key={post.slug}>
-              <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+              <Link href={`/blog/${post.slug}`}>
+                {post.title}
+                {post.date ? ` - ${post.date}` : ''}
+              </Link>
             </li>
           ))}
         </ul>
