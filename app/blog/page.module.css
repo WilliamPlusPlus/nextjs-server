@@ -1,0 +1,127 @@
+.page {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 56px 24px 72px;
+  box-sizing: border-box;
+}
+
+.postLayout {
+  width: min(100%, 720px);
+}
+
+.article {
+  width: min(100%, 720px);
+  color: white;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.125rem;
+  padding: 32px 36px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  background: rgba(10, 18, 40, 0.18);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 999px;
+  background: rgba(10, 18, 40, 0.2);
+  color: white;
+  text-decoration: none;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+  transition:
+    transform 160ms ease,
+    background 160ms ease,
+    border-color 160ms ease;
+}
+
+.backLink:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.backChevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.article :global(h1),
+.article :global(h2),
+.article :global(h3),
+.article :global(h4),
+.article :global(h5),
+.article :global(h6) {
+  text-align: left;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+.article :global(h1) {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1.5rem;
+}
+
+.article :global(h2) {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  margin-top: 2.5rem;
+}
+
+.article :global(p) {
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.article :global(ul),
+.article :global(ol) {
+  margin: 0 0 1rem 1.5rem;
+  padding-left: 1rem;
+  text-align: left;
+}
+
+.article :global(li) {
+  margin: 0.35rem 0;
+}
+
+.article :global(ul) {
+  list-style: disc;
+}
+
+.article :global(ol) {
+  list-style: decimal;
+}
+
+.article :global(code) {
+  font-family: Consolas, Monaco, monospace;
+  padding: 0.15rem 0.35rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 32px 16px 48px;
+  }
+
+  .article {
+    padding: 24px 20px;
+    font-size: 1rem;
+  }
+}
