@@ -9,7 +9,7 @@ export default function Navbar() {
       padding: "20px",
       borderBottom: "1px solid #333",
       color: "white",
-      min-height: "100vh"
+      min-height: "100vh",
     }}>
       <Link href="/">Home</Link>
       <Link href="/time">Server Time</Link>
