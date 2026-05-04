@@ -1,0 +1,93 @@
+.container {
+  width: min(100%, 1000px);
+  margin: 0 auto;
+  padding: 2rem;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.controls {
+  display: flex;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.select, .input {
+  background: rgba(10, 18, 40, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  padding: 0.6rem 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.input {
+  flex: 1;
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.saveButton {
+  background: rgba(59, 130, 246, 0.5);
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.saveButton:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+.message {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.editorArea {
+  min-height: 500px;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 600px;
+  background: rgba(10, 18, 40, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  color: white;
+  padding: 2rem;
+  font-family: inherit;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  resize: vertical;
+  backdrop-filter: blur(10px);
+  outline: none;
+}
+
+.preview {
+  min-height: 600px;
+  overflow-y: auto;
+}

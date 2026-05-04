@@ -11,6 +11,8 @@ export default function Navbar() {
     { href: "/", label: "Home", active: pathname === "/" },
     { href: "/time", label: "Server Time", active: pathname === "/time" },
     { href: "/blog", label: "Blog", active: pathname === "/blog" || pathname.startsWith("/blog/") },
+    { href: "/journal", label: "Journal", active: pathname === "/journal" || pathname.startsWith("/journal/") },
+    { href: "/editor", label: "Editor", active: pathname === "/editor" },
   ]
 
   return (
